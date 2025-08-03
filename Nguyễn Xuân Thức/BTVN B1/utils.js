@@ -130,8 +130,57 @@ export const repeatString = (str,n) =>{
   }
 }
 
+// b16
+export const sumOld = arr => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i] % 2 !== 0 ){
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
 
-
+// b17
+export const sumGreaterThan = (arr, n) => {
+  if (!Array.isArray(arr) || arr.length === 0) {
+    return 'Input khong phai la mang hoac mang rong!';
+  }
+  let sum = 0;
+  arr.map(item => {
+    if (item > n) {
+      sum += item;
+    }
+  });
+  return sum;
+}
+// b18
+export const formatDate = date => {
+  if (typeof date !== 'string'){
+    return 'Input khong phai la chuoi!';
+  }
+  else {
+    return date.split('-').reverse().join('/');
+  }
+}
+// b19
+export const firstThree = arr => {
+  if (!Array.isArray(arr) || arr.length < 3) {
+    return 'Input khong phai la mang hoac mang co it nhat 3 phan tu!';
+  }
+  else{
+    return arr.slice(0, 3); 
+  }
+}
+// b20
+export const containsChar = (str, character) => {
+  if (typeof str !== 'string' || typeof character !== 'string') {
+    return 'Input khong phai la chuoi!';
+  }
+  else{
+    return str.includes(character);
+  }
+}
 
 
 
