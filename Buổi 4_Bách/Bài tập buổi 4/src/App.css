@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+
+}
+
+.general {
+  width: 1328px;
+  margin: 0 auto;
+}
+
+.header_section {
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasklist_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasklist_head_left,
+.tasklist_head_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 13px 0;
+}
+
+.tasklist_head_detail {
+
+  width: 30px;
+  height: 30px;
+  background: #D5D5D5;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+
+}
+
+.column {
+  background-color: #E6ECF0;
+
+}
+
+.Card_content {
+  width: 287px;
+  height: 192px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin-bottom: 12px;
+  margin: 15px;
+}
