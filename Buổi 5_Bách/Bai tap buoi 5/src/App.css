@@ -1,0 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgb(236, 234, 234);
+}
+
+.general {
+  margin-bottom: 32px;
+}
+
+.switch {
+  margin-left: 5px;
+}
