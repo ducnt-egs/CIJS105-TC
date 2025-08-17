@@ -1,23 +1,15 @@
-// sử dụng useState từ react
-import { useState } from "react";
+import React from "react";
+import FrameCol from "./components/FrameCol";
 
 function App() {
-// khởi tạo state với useState
-  const [age, setAge] = useState(10);
-  console.log(age); // thực hiện log state age mỗi khi component được đọc lại (re-render)
-  const handleIncAge = () => {
-    // cập nhật state
-    setAge(age + 1);
-  };
-
   return (
-    <div className="app">
-      <h1>Hello mọi người!</h1>
-      <p>Mỗi năm tôi sẽ được tăng 1 tuổi</p>
-      <p>Hiện tại tôi: {age} tuổi!</p>
-      <button onClick={handleIncAge}>Tăng tuổi</button>
+    <div className="flex gap-2 p-4 bg-white min-h-screen">
+      <FrameCol nameCol="To Do" statusId={1} />
+      <FrameCol nameCol="In Progress" statusId={2} />
+      <FrameCol nameCol="In Review" statusId={3} />
+      <FrameCol nameCol="Done" statusId={4} />
     </div>
-  )
+  );
 }
 
 export default App;
